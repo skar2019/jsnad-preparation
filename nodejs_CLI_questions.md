@@ -1,23 +1,18 @@
-## Node.js CLI
+# Node.js CLI Questions
 
-1. **Parse a `--file` argument**
-   - Accept `--file` from `process.argv` to select a file to process.
-   - Default to a predefined file if not provided.
-   - Example: `node script.js --file=data.txt`.
+## 1. Parse a --file argument
+Write a Node.js script that accepts a `--file` command-line argument from `process.argv` to specify a file to process, defaulting to a predefined file if not provided (example: `node script.js --file=data.txt`).
 
-2. **HTTP server with header-size limit**
-   - Use `--max-http-header-size=4096` to set a 4KB limit.
-   - Also accept a `--port` argument (default `8080`); log configuration on startup.
+## 2. HTTP server with header-size limit
+Create a Node.js HTTP server that uses the `--max-http-header-size=4096` flag to set the header size limit to 4KB, also accepting a `--port` argument (default `8080`) and logging the server configuration on startup.
 
-3. **Heap size restriction**
-   - Allocate a large array to risk exceeding limits.
-   - Run with `--max-old-space-size=100` to restrict heap to 100MB and handle crashes gracefully.
+## 3. Heap size restriction
+Develop a Node.js script that allocates a large array and may exceed memory limits, and run it with `--max-old-space-size=100` to restrict heap size to 100MB while handling any resulting crashes with a graceful error message.
 
-4. **Preload a logging module**
-   - Use `--require` to preload a module and verify by logging initialization before main script runs.
+## 4. Preload a logging module
+Write a Node.js script that depends on a logging module and use the `--require` flag to preload the module, demonstrating its effect by logging initialization details before the main script runs.
 
-5. **Strict unhandled rejections**
-   - Run with `--unhandled-rejections=strict`.
-   - Ensure the script catches all rejections properly.
+## 5. Strict unhandled rejections
+Create a Node.js script with an async function that may produce unhandled promise rejections, run it with `--unhandled-rejections=strict` to enforce strict handling, and modify the script to catch all rejections properly.
 
 
