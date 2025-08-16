@@ -1,7 +1,4 @@
 
-
-
-
 async function Double(number) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
